@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="http://www.swe645.com.s3-website-us-east-1.amazonaws.com/" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SURVEY</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+
+
+  <!-- Automatic Slideshow Images -->
+  
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-padding-64" id="band">
+    <form id="surveyForm">		
+                    
+        <br>
+        <!-- First Name of the student -->
+        <p>      
+            <label class="w3-text-grey required" for="UserName">First Name</label><br>
+            <input class="w3-input" type="text" id="userFirstName" name="userFirstName" autocomplete="on" required autofocus><br><br>
+        </p>
+        <!-- Last Name of the student -->
+        <p>      
+            <label class="w3-text-grey required" for="UserName">Last Name</label><br>
+            <input class="w3-input" type="text" id="userSecondName" name="userSecondName" autocomplete="on" required autofocus><br><br>
+        </p>
+        <!-- Street Address of the student -->
+        <p>      
+            <label class="w3-text-grey required" for="Address">Street Address</label><br>
+            <input class="w3-input" type="text" id="Address" name="Address" autocomplete="on" required><br><br>
+        </p>
+        <!-- City of the student -->
+        <p>      
+            <label class="w3-text-grey required" for="City">City</label>
+            <input class="w3-input" type="text" id="City" name="City" autocomplete="on" required>				
+        </p>
+        <!-- State of the student -->
+        <p>      
+            <label class="w3-text-grey required" for="State">State</label>
+            <input class="w3-input" type="text" id="State" name="State" autocomplete="on" required>				
+        </p>
+        <!-- Zip code of the student-->
+        <p>      
+            <label class="w3-text-grey required" for="zip">Zip Code</label><br>
+            <input class="w3-input" type="text" id="zip" name="zip" autocomplete="on" required><br><br>
+        </p>
+        <!-- Telephone number of the student -->
+        <p>      
+            <label class="w3-text-grey required" for="phone">Telephone Number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="on" required><br><br>
+        </p>
+        <!-- E-mail of the student -->
+        <p>      
+            <label class="w3-text-grey required" for="Email">E-mail</label>
+            <input class="w3-input" type="text" id="Email" name="Email" autocomplete="on" required>
+        </p>
+        <p>      
+            <label class="w3-text-grey required" for="dateOfSurvey">Date of Survey</label>
+            <input class="w3-input" type="date" id="dateOfSurvey" name="dateOfSurvey" autocomplete="on" required>
+        </p>
+        <br>
+        <!-- Checkboxes that allow prospective students to indicate what they liked most about the campus. The checkboxes should include: students, location, campus, atmosphere, dorm rooms, and sports.-->
+        <div class="w3-row">
+            <fieldset>
+                <legend>What did you like most?</legend>
+                <input class="w3-check" type="checkbox" id="students" name="students_fav" value="students" autocomplete="on">
+                <label class="w3-validate" for="students"> Students</label><br>
+                <input class="w3-check" type="checkbox" id="location" name="students_fav" value="location" autocomplete="on">
+                <label class="w3-validate" for="location"> Location</label><br>
+                <input class="w3-check" type="checkbox" id="campus" name="students_fav" value="campus" autocomplete="on">
+                <label class="w3-validate" for="campus"> Campus</label><br>
+                <input class="w3-check" type="checkbox" id="atmosphere" name="students_fav" value="atmosphere" autocomplete="on">
+                <label class="w3-validate" for="atmosphere"> Atmosphere</label><br>
+                <input class="w3-check" type="checkbox" id="dorm_rooms" name="students_fav" value="dorm rooms" autocomplete="on">
+                <label class="w3-validate" for="dorm_rooms"> Dorm Rooms</label><br>
+                <input class="w3-check" type="checkbox" id="sports" name="students_fav" value="sports" autocomplete="on">
+                <label class="w3-validate" for="sports"> Sports</label>
+            </fieldset>  
+        </div>
+        <br>
+        <!-- Radio buttons that allow the prospective students to indicate how they became interested in the university. Options should include: friends, television, Internet, and other. -->
+        <div class="w3-row">		
+            <fieldset>
+                <legend>Reason for your interest in university?</legend>
+                <input class="w3-radio" type="radio" id="friends" name="fav_reason" value="friends" autocomplete="on">
+                <label class="w3-validate" for="friends">Friends</label><br>
+                <input class="w3-radio" type="radio" id="Television" name="fav_reason" value="Television" autocomplete="on">
+                <label class="w3-validate" for="Television">Television</label><br>
+                <input class="w3-radio" type="radio" id="Internet" name="fav_reason" value="Internet" autocomplete="on">
+                <label class="w3-validate" for="Internet">Internet</label><br>
+                <input class="w3-radio" type="radio" id="other" name="fav_reason" value="other" autocomplete="on">
+                <label class="w3-validate" for="other">Other</label>
+            </fieldset>
+        </div>  	
+        <br>		
+            <div class="w3-row">		
+                <fieldset>
+                    <!--A dropdown list of options for the user to select the likelihood of him/her recommending this school to other prospective students. The three options of the dropdown list are: Very Likely, Likely, Unlikely. -->
+                    <legend>How likely do you recommend this university?</legend>
+                    <select name="recommend" id="recommend">
+                        <option value="Very Likely">Very Likely</option>
+                        <option value="Likely">Likely</option>
+                        <option value="UnLikely">Unlikely</option>					
+                    </select>
+                </fieldset>
+            </div>
+            <br>				
+            <div class="w3-row">
+                <fieldset>
+                    <!--An additional text box called Raffle. The user will be asked to enter at least ten comma separated numbers ranging from 1 through100 in the Raffle field. This information will be used to announce whether the student wins a free movie ticket. -->
+                    <legend>Enter at least ten comma separated numbers ranging from 1 through 100 in the Raffle</legend>
+                    <input type="text" name="data" id="data" required>
+                    <br>
+                    </fieldset>                				
+            </div>
+            <br>
+            <label class="w3-text-grey" for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" autocomplete="on">			
+            </textarea>
+            <p>
+                <button type="submit" class="w3-bar-item w3-button" style="width:120px">Submit</button>
+                <button type="cancel" class="w3-bar-item w3-button" style="width:120px">Cancel</button>
+            </p>				
+        </form>
+  </div>
+
+
+
+</body>
+</html>
