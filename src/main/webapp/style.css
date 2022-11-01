@@ -1,3 +1,4 @@
+/* Slides display for the html body */
 @charset "UTF-8";
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
